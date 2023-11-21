@@ -1,0 +1,13 @@
+- yarn add prisma -D: Este comando é um pouco redundante, pois @prisma/cli foi substituído por prisma em versões mais recentes do Prisma. Portanto, apenas prisma é necessário.
+
+- yarn prisma init: Inicializa um projeto Prisma no diretório atual. Este comando cria uma nova pasta prisma com um esquema Prisma (arquivo schema.prisma) e um arquivo de configuração de ambiente (.env).
+
+- yarn add @prisma/client: Adiciona o Prisma Client ao seu projeto. O Prisma Client é uma biblioteca auto-gerada que permite realizar consultas ao banco de dados de forma segura e conveniente.
+
+- npx prisma generate: Gera o Prisma Client com base em seu esquema Prisma. Este passo é necessário para aplicar as definições do seu esquema ao Prisma Client.
+
+- yarn prisma migrate dev: Cria e aplica migrações de banco de dados em um ambiente de desenvolvimento. Este comando é usado para evoluir o esquema do banco de dados ao longo do tempo.
+
+- yarn prisma migrate deploy: Aplica as migrações de banco de dados em um ambiente de produção. Este comando é usado para atualizar o esquema do banco de dados em ambientes de produção.
+
+- yarn prisma studio: Inicia o Prisma Studio, uma interface gráfica para visualizar e manipular dados no banco de dados conectado ao seu projeto Prisma.
